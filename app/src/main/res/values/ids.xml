@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pic" type="id"/>
+    <item name="id" type="id"/>
+    <item name="email" type="id"/>
+    <item name="name" type="id"/>
+    <item name="sign_out_button" type="id"/>
+    <item name="top_places_recycler" type="id"/>
+    <item name="recent_recycler" type="id"/>
+</resources>

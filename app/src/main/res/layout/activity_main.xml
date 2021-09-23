@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity"
+        android:orientation="vertical" android:id="@+id/title">
+
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:background="#FFFFFF"
+                tools:context=".MainActivity" android:orientation="vertical" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="700dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="40dp" app:layout_constraintTop_toTopOf="parent"
+        >
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="565dp"
+                        android:src="@drawable/holi"
+                        android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:hint="Email"/>
+                <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:hint="Password"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:id="@+id/loginb" android:backgroundTint="#C13F51B5"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="or"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Signin with Google"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="161dp"
+                android:layout_height="85dp"
+                android:background="@drawable/book_button_bg"
+                tools:context=".MainActivity" android:orientation="vertical" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="200dp"
+                app:layout_constraintVertical_bias="0.0" android:layout_marginTop="600dp"
+                android:layout_marginBottom="200dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="200dp">
+
+                <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="159dp"
+                        android:layout_height="80dp"/>
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
